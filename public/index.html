@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Aminul</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            margin-bottom: 20px;
+        }
+        section h2 {
+            margin-top: 0;
+        }
+        .projects img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aminul Islam</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm a web developer with a passion for creating interactive and dynamic websites. I have experience with JavaScript, Node.js, Azure, HTML, and CSS. I'm currently pursuing Bachelor of Technology in Electrical Engineering from IIEST Shibpur. I'm now expanding my skills into Spring Boot development and actively adding more features to my existing projects.
+        </p>
+        <h4>Skills</h4>
+        <ul>
+            <li><strong>Languages:</strong> C/C++, JavaScript, Java</li>
+            <li><strong>SDK:</strong> Node.js, Express, MongoDB</li>
+            <li><strong>Cloud Computing:</strong> Microsoft Azure, Amazon Web Services (beginner)</li>
+            <li><strong>VCS:</strong> Git</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div>
+            <h3>1. URL Shortener</h3>
+            <p>This project involves the development of a URL Shortener web application. The application allows users to input a long URL and receive a shortened version that redirects to the original URL. The project showcases skills in backend development using Node.js, implementing RESTful APIs, and managing data storage for mapping short URLs to their original counterparts. Additionally, the application includes features like analytics tracking to monitor the number of clicks each shortened URL receives.</p>
+            <p><a href="https://shorturl.aminuldev.me" target="_blank">website link</a></p>
+            <p><a href="https://github.com/aminulislam33/URL-Shortener" target="_blank">Source code</a></p>
+        </div>
+        <div>
+            <h3>2. Hospital Management System (OPD Ticket Booking System)</h3>
+            <p>This project is a Hospital Management System focused on streamlining the Outpatient Department (OPD) ticket booking process. The system allows patients to book OPD tickets online, reducing the need for long queues and manual paperwork. It features user authentication and appointment scheduling. The project highlights skills in full-stack web development, database management, and creating a user-friendly interface that improves hospital administration efficiency and patient experience.</p>
+            <p><a href="https://hospital.aminuldev.me" target="_blank">website link</a></p>
+            <p><a href="https://github.com/aminulislam33/hospital-mgmt-system" target="_blank">Source code</a></p>
+        </div>
+        <div>
+            <h3>3. Blog Application</h3>
+            <p>This project is a Blog App that allows users to create, edit, and publish blog posts. The application includes user authentication, enabling authors to manage their posts securely. It features a rich text editor for writing posts, a comments section for user interaction, and a responsive design to ensure accessibility across devices. This project demonstrates proficiency in full-stack development, integrating front-end and back-end technologies, and deploying web applications.</p>
+            <p><a href="https://blog.aminuldev.me" target="_blank">website link</a></p>
+            <p><a href="https://github.com/aminulislam33/blog-app" target="_blank">Source code</a></p>
+        </div>
+        <div>
+            <h3>4. Real-Time Chat Application</h3>
+            <p>This project is a Real-Time Chat Application that enables users to communicate instantly with one another. Currently end-to-end chat isn't available, I'm working on it. This application is created using websocket.</p>
+            <p><a href="https://chat.aminuldev.me" target="_blank">website link</a></p>
+            <p><a href="https://github.com/aminulislam33/chat-app" target="_blank">Source code</a></p>
+        </div>
+        <div>
+            <h3>5. StreamFlix</h3>
+            <p>Streamflix is a media streaming platform designed to provide users with seamless access to video content. The application features a secure user authentication system, allowing users to create and manage accounts. It also includes a robust payment gateway integration for subscription management, enabling users to easily subscribe to content plans. The platform ensures high-quality video streaming. This project highlights skills in secure authentication, payment processing, and efficient media streaming solutions.</p>
+            <p><a href="https://streamflix.aminuldev.me" target="_blank">website link</a></p>
+            <p><a href="https://github.com/aminulislam33/streamflix" target="_blank">Source code</a></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>
+            Feel free to reach out to me via email at <a href="mailto:mail@aminuldev.me">mail@aminuldev.me</a> or connect with me on <a href="https://www.linkedin.com/in/aminul-islam-683b02285" target="_blank">LinkedIn</a>.
+        </p>
+    </section>    
+
+    <footer>
+        <p>&copy; <span id="year"></span> aminuldev.me. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
