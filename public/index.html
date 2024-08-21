@@ -50,6 +50,18 @@
             margin-top: 0;
         }
 
+        .social-links {
+            float: right;
+            margin-top: -50px;
+        }
+
+        .social-links a {
+            color: #333;
+            margin-left: 15px;
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+
         .projects img {
             max-width: 100%;
             height: auto;
@@ -69,32 +81,22 @@
 </head>
 
 <body>
-    <header>
-        <h1>Aminul Islam</h1>
-
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
     <section id="about">
-        <h2>About Me</h2>
+        <h2>Home</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/aminul-islam-683b02285" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/aminulislam33" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/aminul_1873/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
         <p>
-            Hello! I'm an undergraduate student at IIEST Shibpur with a strong interest in backend web development. Over
-            the past six months, I've developed several projects using Node.js. I'm now expanding my skills into Spring
-            Boot development and actively enhancing my existing projects.
+            Hello! I'm Aminul. Welcome to my website. I’m currently an undergraduate engineering student, and I work in server-side web development. Over the past six months, I’ve worked on several projects using Node.js, which you can find listed below.
         </p>
-        <h4>Contact me</h4>
-        <ul>
-            <h4><i class="fas fa-envelope"></i> Email:</h4>
-            <p>mail@aminuldev.me</p>
-            <p>aminulislam03905@gmail.com</p>
-            <h4><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/aminul-islam-683b02285"
-                    target="_blank">LinkedIn</a></h4>
-            <h4><i class="fab fa-github"></i> <a href="https://github.com/aminulislam33" target="_blank">GitHub</a></h4>
-        </ul>
         <h4>Skills</h4>
         <ul>
             <li><strong>Languages:</strong> C/C++, JavaScript, Java</li>
@@ -120,7 +122,6 @@
                 <em>Bachelor of Technology in Electrical Engineering</em> | Expected Graduation: 2027
             </li>
         </ul>
-
     </section>
 
     <section id="projects" class="projects">
@@ -158,8 +159,8 @@
         <div>
             <h3>4. Real-Time Chat Application</h3>
             <p>This project is a Real-Time Chat Application that enables users to communicate instantly with one
-                another. Currently end-to-end chat isn't available, I'm working on it. This application is created using
-                websocket.</p>
+                another. It features end-to-end encryption to ensure secure conversations. The application is built
+                using WebSocket technology.</p>
             <p>Link: <a href="https://chat.aminuldev.me" target="_blank">chat.aminuldev.me</a></p>
             <p><a href="https://github.com/aminulislam33/chat-app" target="_blank">Source code</a></p>
         </div>
@@ -174,18 +175,8 @@
             <p>Link: <a href="https://streamflix.aminuldev.me" target="_blank">streamflix.aminuldev.me</a></p>
             <p><a href="https://github.com/aminulislam33/streamflix" target="_blank">Source code</a></p>
         </div>
-    </section>
-
-    <section id="contact">
-        <h2>Social</h2>
-        <h4><i class="fab fa-instagram"></i> <a href="https://www.instagram.com/aminul_1873/"
-                target="_blank">Instagram</a></h4>
-        <h4><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/aminul-islam-683b02285"
-                target="_blank">LinkedIn</a></h4>
 
     </section>
-
-
     <footer>
         <p>&copy; <span id="year"></span> aminuldev.me. All rights reserved.</p>
     </footer>
