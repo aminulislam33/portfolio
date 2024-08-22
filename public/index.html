@@ -15,6 +15,11 @@
             scroll-behavior: smooth;
         }
 
+        body.dark-mode {
+            background-color: #333;
+            color: #f4f4f4;
+        }
+
         header {
             background-color: #333;
             color: #fff;
@@ -62,11 +67,6 @@
             font-size: 1.5em;
         }
 
-        .projects img {
-            max-width: 100%;
-            height: auto;
-        }
-
         footer {
             background-color: #333;
             color: #fff;
@@ -76,6 +76,19 @@
 
         ul {
             padding-left: 20px;
+        }
+
+        body.dark-mode header,
+        body.dark-mode footer {
+            background-color: #555;
+        }
+
+        body.dark-mode .social-links a {
+            color: #f4f4f4;
+        }
+
+        body.dark-mode section {
+            background-color: #444;
         }
     </style>
 </head>
@@ -93,9 +106,14 @@
             <a href="https://www.instagram.com/aminul_1873/" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
+            <a href="#" id="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </a>
         </div>
         <p>
-            Hello! I'm Aminul. Welcome to my website. I’m currently an undergraduate engineering student, and I work in server-side web development. Over the past six months, I’ve worked on several projects using Node.js, which you can find listed below.
+            Hello! I'm Aminul. Welcome to my website. I’m currently an undergraduate engineering student, and I work in
+            server-side web development. Over the past six months, I’ve worked on several projects using Node.js, which
+            you can find listed below.
         </p>
         <h4>Skills</h4>
         <ul>
@@ -182,6 +200,21 @@
     </footer>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
+
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+        const themeIcon = themeToggle.querySelector('i');
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                themeIcon.classList.remove('fa-moon');
+                themeIcon.classList.add('fa-sun');
+            } else {
+                themeIcon.classList.remove('fa-sun');
+                themeIcon.classList.add('fa-moon');
+            }
+        });
     </script>
 </body>
 
