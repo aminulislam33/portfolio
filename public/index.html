@@ -5,203 +5,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Aminul</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            scroll-behavior: smooth;
-        }
-
-        body.dark-mode {
-            background-color: #333;
-            color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        nav {
-            margin-top: 10px;
-        }
-
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
-
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background-color: #fff;
-            margin-bottom: 20px;
-        }
-
-        section h2 {
-            margin-top: 0;
-        }
-
-        .social-links {
-            float: right;
-            margin-top: -50px;
-        }
-
-        .social-links a {
-            color: #333;
-            margin-left: 15px;
-            text-decoration: none;
-            font-size: 1.5em;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        body.dark-mode header,
-        body.dark-mode footer {
-            background-color: #555;
-        }
-
-        body.dark-mode .social-links a {
-            color: #f4f4f4;
-        }
-
-        body.dark-mode section {
-            background-color: #444;
-        }
-    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <section id="about">
-        <h2 class="home"><a href="/">Home</a></h2>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/aminul-islam-683b02285" target="_blank">
-                <i class="fab fa-linkedin"></i>
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 font-sans leading-relaxed">
+
+    <!-- Header Section -->
+    <header class="bg-gradient-to-r from-teal-500 to-blue-600 p-6">
+        <div class="container mx-auto flex items-center justify-between">
+            <h1 class="text-3xl font-bold text-white">Hello, I'm Aminul</h1>
+            <button id="theme-toggle" class="text-white">
+                <i class="fas fa-moon text-2xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto p-6">
+        <h2 class="text-2xl font-semibold text-teal-600">About Me</h2>
+        <p class="mt-4">Hello! I'm Aminul, an undergraduate engineering student focusing on server-side web development. Over the past six months, I’ve completed several projects using Node.js, with a recent interest in Java development.</p>
+        <div class="flex items-center space-x-4 mt-6">
+            <a href="https://www.linkedin.com/in/aminul-islam-683b02285" target="_blank" class="text-teal-500">
+                <i class="fab fa-linkedin fa-2x"></i>
             </a>
-            <a href="https://github.com/aminulislam33" target="_blank">
-                <i class="fab fa-github"></i>
+            <a href="https://github.com/aminulislam33" target="_blank" class="text-teal-500">
+                <i class="fab fa-github fa-2x"></i>
             </a>
-            <a href="https://www.instagram.com/aminul_1873/" target="_blank">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="#" id="theme-toggle">
-                <i class="fas fa-moon"></i>
+            <a href="https://www.instagram.com/aminul_1873/" target="_blank" class="text-teal-500">
+                <i class="fab fa-instagram fa-2x"></i>
             </a>
         </div>
-        <p>
-            Hello! I'm Aminul. Welcome to my website. I’m currently an undergraduate engineering student, and I work in
-            server-side web development. Over the past six months, I’ve worked on several projects using Node.js, which
-            you can find listed below. Currently I'm focusing on Java development.
-        </p>
-        <h4>Skills</h4>
-        <ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto p-6 bg-gray-100 dark:bg-gray-800 rounded-lg my-6">
+        <h2 class="text-2xl font-semibold text-teal-600">Skills</h2>
+        <ul class="list-disc pl-5 mt-4">
             <li><strong>Languages:</strong> C/C++, JavaScript, Java</li>
             <li><strong>SDK:</strong> Node.js, Express, MongoDB</li>
             <li><strong>Cloud Computing:</strong> Microsoft Azure, Amazon Web Services (beginner)</li>
             <li><strong>VCS:</strong> Git</li>
         </ul>
-        <h4>Education</h4>
-        <ul>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="container mx-auto p-6">
+        <h2 class="text-2xl font-semibold text-teal-600">Education</h2>
+        <ul class="mt-4 space-y-3">
             <li>
-                <strong>Class 10:</strong> Joyenpur High School (H.S.)
-                <br>
-                <em>West Bengal Board of Secondary Education</em> | Passed in 2020
+                <strong>Class 10:</strong> Joyenpur High School (H.S.) 
+                <em class="block">West Bengal Board of Secondary Education, Passed in 2020</em>
             </li>
             <li>
-                <strong>Class 12:</strong> Netra High Madrasah
-                <br>
-                <em>West Bengal Council of Higher Secondary Education</em> | Passed in 2022
+                <strong>Class 12:</strong> Netra High Madrasah 
+                <em class="block">West Bengal Council of Higher Secondary Education, Passed in 2022</em>
             </li>
             <li>
-                <strong>Undergraduate:</strong> Indian Institute of Engineering Science and Technology (IIEST) Shibpur
-                <br>
-                <em>Bachelor of Technology in Electrical Engineering</em> | Expected Graduation: 2027
+                <strong>Undergraduate:</strong> IIEST Shibpur 
+                <em class="block">B.Tech in Electrical Engineering, Expected Graduation: 2027</em>
             </li>
         </ul>
     </section>
 
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div>
-            <h3>1. URL Shortener</h3>
-            <p>Link: <a href="https://shorturl.aminuldev.me" target="_blank">shorturl.aminuldev.me</a></p>
-            <p><a href="https://github.com/aminulislam33/URL-Shortener" target="_blank">Source code</a></p>
+    <!-- Projects Section -->
+    <section id="projects" class="container mx-auto p-6 bg-gray-100 dark:bg-gray-800 rounded-lg my-6">
+        <h2 class="text-2xl font-semibold text-teal-600">Projects</h2>
+        <div class="mt-4 space-y-4">
+            <div>
+                <h3 class="text-xl font-bold">URL Shortener</h3>
+                <p><a href="https://shorturl.aminuldev.me" class="text-blue-500" target="_blank">Visit Site</a> | <a href="https://github.com/aminulislam33/URL-Shortener" class="text-teal-500" target="_blank">Source code</a></p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold">Hospital Management System (OPD Ticket Booking System)</h3>
+                <p><a href="https://hospital.aminuldev.me" class="text-blue-500" target="_blank">Visit Site</a> | 
+                   <a href="https://github.com/aminulislam33/hospital-mgmt-system" class="text-teal-500" target="_blank">Source code</a>
+                </p>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold">Blog Application</h3>
+                <p><a href="https://blog.aminuldev.me" class="text-blue-500" target="_blank">Visit Site</a> | 
+                   <a href="https://github.com/aminulislam33/blog-app" class="text-teal-500" target="_blank">Source code</a>
+                </p>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold">Real-Time Chat Application</h3>
+                <p><a href="https://chat.aminuldev.me" class="text-blue-500" target="_blank">Visit Site</a> | 
+                   <a href="https://github.com/aminulislam33/chat-app" class="text-teal-500" target="_blank">Source code</a>
+                </p>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold">StreamFlix</h3>
+                <p><a href="https://streamflix.aminuldev.me" class="text-blue-500" target="_blank">Visit Site</a> | 
+                   <a href="https://github.com/aminulislam33/streamflix" class="text-teal-500" target="_blank">Source code</a>
+                </p>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-bold">E-Commerce</h3>
+                <p><a href="https://ecocart.aminuldev.me" class="text-blue-500" target="_blank">Visit Site</a> | 
+                   <a href="https://github.com/aminulislam33/e-commerce" class="text-teal-500" target="_blank">Source code</a>
+                </p>
+            </div>
+            
         </div>
-        <div>
-            <h3>2. Hospital Management System (OPD Ticket Booking System)</h3>
-
-            <p>Link: <a href="https://hospital.aminuldev.me" target="_blank">hospital.aminuldev.me</a></p>
-            <p><a href="https://github.com/aminulislam33/hospital-mgmt-system" target="_blank">Source code</a></p>
-        </div>
-        <div>
-            <h3>3. Blog Application</h3>
-
-            <p>link: <a href="https://blog.aminuldev.me" target="_blank">blog.aminuldev.me</a></p>
-            <p><a href="https://github.com/aminulislam33/blog-app" target="_blank">Source code</a></p>
-        </div>
-        <div>
-            <h3>4. Real-Time Chat Application</h3>
-
-            <p>Link: <a href="https://chat.aminuldev.me" target="_blank">chat.aminuldev.me</a></p>
-            <p><a href="https://github.com/aminulislam33/chat-app" target="_blank">Source code</a></p>
-        </div>
-        <div>
-            <h3>5. StreamFlix</h3>
-
-            <p>Link: <a href="https://streamflix.aminuldev.me" target="_blank">streamflix.aminuldev.me</a></p>
-            <p><a href="https://github.com/aminulislam33/streamflix" target="_blank">Source code</a></p>
-        </div>
-        <div>
-            <h3>6. E-Commerce</h3>
-
-            <p>Link: <a href="https://ecocart.aminuldev.me" target="_blank">ecocart.aminuldev.me</a></p>
-            <p><a href="https://github.com/aminulislam33/e-commerce" target="_blank">Source code</a></p>
-        </div>
-
+        
     </section>
-    <footer>
+
+    <!-- Footer -->
+    <footer class="bg-teal-600 text-white text-center p-4">
         <p>&copy; <span id="year"></span> aminuldev.me. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript for Dynamic Year and Theme Toggle -->
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
-
         const themeToggle = document.getElementById('theme-toggle');
         const body = document.body;
         const themeIcon = themeToggle.querySelector('i');
 
         themeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            if (body.classList.contains('dark-mode')) {
-                themeIcon.classList.remove('fa-moon');
-                themeIcon.classList.add('fa-sun');
-            } else {
-                themeIcon.classList.remove('fa-sun');
-                themeIcon.classList.add('fa-moon');
-            }
+            body.classList.toggle('dark');
+            themeIcon.classList.toggle('fa-sun');
+            themeIcon.classList.toggle('fa-moon');
         });
     </script>
+
 </body>
 
 </html>
